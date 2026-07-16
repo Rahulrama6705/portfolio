@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(ellipse 120% 80% at 50% -10%, #16122a 0%, #0a0912 45%, #060509 100%);
+  color: #e8e8ef;
+  @apply font-body antialiased;
+}
+
+::selection {
+  background: #6c5ce7;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0912;
+}
+::-webkit-scrollbar-thumb {
+  background: #2d2a3d;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6c5ce7;
+}
+
+.section-container {
+  @apply mx-auto w-full max-w-5xl px-6 sm:px-8;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #6c5ce7, #a29bfe 60%, #fd79a8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
