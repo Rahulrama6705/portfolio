@@ -6,3 +6,6 @@ dist-ssr
 .claude
 tsconfig.tsbuildinfo
 *.zip
+
+# Local Netlify folder
+.netlify

@@ -4,34 +4,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: '#0a0912',
-        paper: '#e8e8ef',
+        paper: '#f4f1f8',
+        paperDeep: '#efeaf5',
+        ink: '#241f19',
+        inkSoft: '#2b2620',
         accent: {
-          DEFAULT: '#6c5ce7',
-          light: '#a29bfe',
-          pink: '#fd79a8',
+          DEFAULT: '#1c4a46',
+          light: '#3f8a83',
+          soft: '#5fa39c',
         },
       },
       fontFamily: {
-        display: [
-          '-apple-system',
-          'BlinkMacSystemFont',
-          '"SF Pro Display"',
-          '"SF Pro Text"',
-          '"Helvetica Neue"',
-          'Arial',
-          'sans-serif',
-        ],
-        body: [
-          '-apple-system',
-          'BlinkMacSystemFont',
-          '"SF Pro Display"',
-          '"SF Pro Text"',
-          '"Helvetica Neue"',
-          'Arial',
-          'sans-serif',
-        ],
-        mono: ['ui-monospace', '"SF Mono"', 'Menlo', 'Consolas', 'monospace'],
+        serif: ['"Computer Modern Serif"', '"Latin Modern Roman"', '"Times New Roman"', 'serif'],
       },
     },
   },

@@ -13,14 +13,13 @@ export default function SectionHeading({ index, title }: { index: string; title:
   const x = useTransform(scrollYProgress, [0, 1], [18, 0])
 
   return (
-    <div ref={ref} className="mb-12 flex items-baseline gap-4">
-      <span className="font-mono text-sm text-accent-light">{index}</span>
-      <h2 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
+    <div ref={ref} className="mb-8">
+      <p className="mb-2.5 font-serif text-lg font-bold tracking-[0.1em] text-accent">{index}</p>
+      <h2 className="inline-block font-serif text-[clamp(38px,5vw,54px)] font-bold text-ink">
         <motion.span style={{ clipPath, x }} className="inline-block">
           {title}
         </motion.span>
       </h2>
-      <div className="h-px flex-1 bg-white/10" />
     </div>
   )
 }

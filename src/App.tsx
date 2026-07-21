@@ -5,14 +5,11 @@ import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
-import BackgroundFX from './components/BackgroundFX'
-import CursorSpotlight from './components/CursorSpotlight'
+import ChatWidget from './components/ChatWidget'
 
 function App() {
   return (
     <div className="relative min-h-screen overflow-x-hidden">
-      <BackgroundFX />
-      <CursorSpotlight />
       <Nav />
       <main>
         <Hero />
@@ -22,6 +19,7 @@ function App() {
         <Skills />
         <Contact />
       </main>
+      <ChatWidget />
     </div>
   )
 }

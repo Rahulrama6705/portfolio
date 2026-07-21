@@ -15,6 +15,7 @@ export const education = {
   school: 'Woxsen University',
   degree: 'B.Tech CS — AI & ML',
   dates: 'Aug 2023 – 2027',
+  cgpa: '8.6 / 10',
 }
 
 export const certifications = [

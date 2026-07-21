@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes pulseGlow {
+@keyframes dotPulse {
   0%,
   100% {
-    opacity: 0.55;
+    box-shadow: 0 0 0 0 rgba(63, 138, 131, 0.5);
   }
   50% {
-    opacity: 0.85;
+    box-shadow: 0 0 0 6px rgba(63, 138, 131, 0.15);
   }
 }
 
@@ -18,37 +18,37 @@
 
 body {
   margin: 0;
-  background: radial-gradient(ellipse 120% 80% at 50% -10%, #16122a 0%, #0a0912 45%, #060509 100%);
-  color: #e8e8ef;
-  @apply font-body antialiased;
+  background: #f4f1f8;
+  color: #2b2620;
+  @apply font-serif antialiased;
 }
 
 ::selection {
-  background: #6c5ce7;
-  color: #fff;
+  background: #b8a5d8;
+  color: #1a1510;
 }
 
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #0a0912;
+  background: #efeaf5;
 }
 ::-webkit-scrollbar-thumb {
-  background: #2d2a3d;
+  background: rgba(28, 74, 70, 0.35);
   border-radius: 999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #6c5ce7;
+  background: #1c4a46;
 }
 
 .section-container {
   @apply mx-auto w-full max-w-5xl px-6 sm:px-8;
 }
 
-.gradient-text {
-  background: linear-gradient(90deg, #6c5ce7, #a29bfe 60%, #fd79a8);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+.dock-word {
+  display: inline-block;
+  white-space: pre;
+  transform-origin: center bottom;
+  transition: transform 0.15s ease-out;
 }
