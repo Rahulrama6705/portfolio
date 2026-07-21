@@ -20,7 +20,7 @@ body {
   margin: 0;
   background: #f4f1f8;
   color: #2b2620;
-  @apply font-sans antialiased;
+  @apply font-serif antialiased;
 }
 
 ::selection {

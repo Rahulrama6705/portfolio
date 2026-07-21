@@ -15,7 +15,7 @@ export default function Projects() {
               <div className="mb-2.5 flex items-start justify-between gap-3">
                 <h3 className="font-serif text-[23px] font-semibold text-ink">{p.title}</h3>
                 <div className="flex shrink-0 items-center gap-2.5 pt-0.5">
-                  <span className="whitespace-nowrap font-sans text-[17px] text-ink/45">{p.dates}</span>
+                  <span className="whitespace-nowrap font-serif text-[17px] text-ink/45">{p.dates}</span>
                   {p.github && (
                     <a
                       href={p.github}
@@ -29,8 +29,8 @@ export default function Projects() {
                   )}
                 </div>
               </div>
-              <p className="mb-4 font-sans text-[19px] leading-[1.7] text-ink/70">{p.description}</p>
-              <div className="flex flex-wrap gap-x-3 gap-y-1.5 font-sans text-[17px] text-ink/45">
+              <p className="mb-4 font-serif text-[19px] leading-[1.7] text-ink/70">{p.description}</p>
+              <div className="flex flex-wrap gap-x-3 gap-y-1.5 font-serif text-[17px] text-ink/45">
                 {p.stack.map((t, i) => (
                   <span key={t}>
                     {t}

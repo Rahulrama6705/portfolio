@@ -36,7 +36,7 @@ export default function Nav() {
       <a href="#hero" className="font-serif text-[23px] font-bold text-ink no-underline">
         Rahul Rama
       </a>
-      <div className="flex gap-8 font-sans text-[18px] font-medium text-ink/60">
+      <div className="flex gap-8 font-serif text-[18px] font-medium text-ink/60">
         {links.map((l) => (
           <a
             key={l}

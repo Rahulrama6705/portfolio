@@ -13,12 +13,12 @@ export default function Experience() {
             <div className={`border-t border-ink/10 py-8 ${i === experience.length - 1 ? 'border-b' : ''}`}>
               <div className="mb-2 flex flex-wrap items-baseline justify-between gap-2">
                 <h3 className="font-serif text-2xl font-semibold text-ink">{job.role}</h3>
-                <span className="font-sans text-[17px] font-medium text-ink/45">{job.dates}</span>
+                <span className="font-serif text-[17px] font-medium text-ink/45">{job.dates}</span>
               </div>
-              <p className="mb-3 font-sans text-[18.5px] font-medium text-accent">{job.org}</p>
+              <p className="mb-3 font-serif text-[18.5px] font-medium text-accent">{job.org}</p>
               <ul className="flex flex-col gap-1.5">
                 {job.bullets.map((b) => (
-                  <li key={b} className="font-sans text-[19px] leading-[1.7] text-ink/70">
+                  <li key={b} className="font-serif text-[19px] leading-[1.7] text-ink/70">
                     {b}
                   </li>
                 ))}
