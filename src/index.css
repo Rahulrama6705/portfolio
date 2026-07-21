@@ -5,11 +5,38 @@
 @keyframes dotPulse {
   0%,
   100% {
-    box-shadow: 0 0 0 0 rgba(63, 138, 131, 0.5);
+    box-shadow: 0 0 0 0 rgba(124, 92, 255, 0.5);
   }
   50% {
-    box-shadow: 0 0 0 6px rgba(63, 138, 131, 0.15);
+    box-shadow: 0 0 0 6px rgba(124, 92, 255, 0.15);
   }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+
+@keyframes blinkCursor {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.typing-cursor {
+  animation: blinkCursor 0.9s step-end infinite;
 }
 
 * {
@@ -17,13 +44,13 @@
 }
 
 html {
-  background: #faf7f1;
+  background: #0b0d12;
 }
 
 body {
   margin: 0;
-  background: #faf7f1;
-  color: #26211b;
+  background: #0b0d12;
+  color: #f3f4f6;
   @apply font-sans antialiased;
   position: relative;
 }
@@ -34,28 +61,28 @@ body::before {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.5;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
-  mix-blend-mode: multiply;
+  opacity: 0.4;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
 }
 
 ::selection {
-  background: #d68a5c;
-  color: #26211b;
+  background: #7c5cff;
+  color: #ffffff;
 }
 
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1ece1;
+  background: #12151c;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(28, 74, 70, 0.35);
+  background: rgba(124, 92, 255, 0.35);
   border-radius: 999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #1c4a46;
+  background: #7c5cff;
 }
 
 .section-container {

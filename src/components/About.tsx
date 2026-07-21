@@ -14,7 +14,7 @@ export default function About() {
 
         <Reveal direction="right">
           <div className="flex flex-col gap-5">
-            <div className="rounded-xl border border-ink/10 bg-white/40 p-6 shadow-[0_1px_2px_rgba(36,31,25,0.04)]">
+            <div className="rounded-xl border border-ink/10 bg-white/[0.03] p-6 shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
               <p className="mb-3 font-sans text-[16px] font-semibold uppercase tracking-[0.14em] text-ink/45">
                 Education
               </p>
@@ -25,7 +25,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="rounded-xl border border-ink/10 bg-white/40 p-6 shadow-[0_1px_2px_rgba(36,31,25,0.04)]">
+            <div className="rounded-xl border border-ink/10 bg-white/[0.03] p-6 shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
               <p className="mb-3 font-sans text-[16px] font-semibold uppercase tracking-[0.14em] text-ink/45">
                 Certifications
               </p>

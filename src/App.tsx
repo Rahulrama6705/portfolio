@@ -1,5 +1,6 @@
 import Nav from './components/Nav'
 import Hero from './components/Hero'
+import MarqueeStrip from './components/MarqueeStrip'
 import About from './components/About'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
@@ -13,6 +14,7 @@ function App() {
       <Nav />
       <main>
         <Hero />
+        <MarqueeStrip />
         <About />
         <Experience />
         <Projects />

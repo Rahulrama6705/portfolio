@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <section id="contact" className="relative z-[1] mx-auto max-w-[700px] px-[6vw] py-20 pb-24 text-center">
       <Reveal>
-        <p className="mb-2 font-sans text-[17px] font-semibold uppercase tracking-[0.18em] text-accent">
+        <p className="mb-2 font-sans text-[17px] font-semibold uppercase tracking-[0.18em] text-accent-light">
           05 · Contact
         </p>
         <h2 className="mb-5 font-serif text-[clamp(34px,4.5vw,50px)] font-bold text-ink">
@@ -24,13 +24,13 @@ export default function Contact() {
         </a>
 
         <div className="flex flex-wrap justify-center gap-6 font-sans text-[18px] text-ink/50">
-          <a href={profile.github} target="_blank" rel="noreferrer" className="no-underline transition-colors hover:text-accent">
+          <a href={profile.github} target="_blank" rel="noreferrer" className="no-underline transition-colors hover:text-accent-light">
             GitHub
           </a>
-          <a href={profile.linkedin} target="_blank" rel="noreferrer" className="no-underline transition-colors hover:text-accent">
+          <a href={profile.linkedin} target="_blank" rel="noreferrer" className="no-underline transition-colors hover:text-accent-light">
             LinkedIn
           </a>
-          <a href={`tel:${profile.phone.replace(/\s/g, '')}`} className="no-underline transition-colors hover:text-accent">
+          <a href={`tel:${profile.phone.replace(/\s/g, '')}`} className="no-underline transition-colors hover:text-accent-light">
             {profile.phone}
           </a>
         </div>

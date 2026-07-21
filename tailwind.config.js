@@ -4,22 +4,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        paper: '#faf7f1',
-        paperDeep: '#f1ece1',
-        ink: '#26211b',
-        inkSoft: '#332c23',
+        paper: '#0b0d12',
+        paperDeep: '#12151c',
+        ink: '#f3f4f6',
+        inkSoft: '#e7e8ea',
         accent: {
-          DEFAULT: '#1c4a46',
-          light: '#3f8a83',
-          soft: '#5fa39c',
-        },
-        clay: {
-          DEFAULT: '#b6602f',
-          light: '#d68a5c',
+          DEFAULT: '#7c5cff',
+          light: '#a68bff',
+          soft: '#5eead4',
         },
       },
       fontFamily: {
-        serif: ['"Fraunces"', '"Iowan Old Style"', 'Georgia', 'serif'],
+        serif: ['"Space Grotesk"', '-apple-system', 'system-ui', 'sans-serif'],
         sans: ['"Inter"', '-apple-system', 'system-ui', 'sans-serif'],
       },
     },

@@ -11,7 +11,7 @@ export default function Projects() {
       <div className="flex flex-col gap-7">
         {projects.map((p) => (
           <Reveal key={p.title} distance={16}>
-            <div className="overflow-hidden rounded-xl border border-ink/10 bg-white/40 shadow-[0_1px_2px_rgba(36,31,25,0.04)] transition-all duration-200 hover:border-ink/20 hover:shadow-[0_8px_24px_rgba(36,31,25,0.08)]">
+            <div className="overflow-hidden rounded-xl border border-ink/10 bg-white/[0.03] shadow-[0_1px_2px_rgba(0,0,0,0.3)] transition-all duration-200 hover:border-ink/20 hover:shadow-[0_8px_24px_rgba(0,0,0,0.5)]">
               {p.image && (
                 <div className="bg-paperDeep px-3 pb-3 pt-3">
                   <div className="mb-2 flex items-center gap-1.5 px-1">
@@ -40,7 +40,7 @@ export default function Projects() {
                         target="_blank"
                         rel="noreferrer"
                         aria-label={`${p.title} on GitHub`}
-                        className="text-ink/35 transition-colors hover:text-accent"
+                        className="text-ink/35 transition-colors hover:text-accent-light"
                       >
                         <Github size={18} />
                       </a>
