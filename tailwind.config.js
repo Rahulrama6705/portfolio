@@ -16,6 +16,7 @@ export default {
       },
       fontFamily: {
         serif: ['"Computer Modern Serif"', '"Latin Modern Roman"', '"Times New Roman"', 'serif'],
+        sans: ['"Inter"', '-apple-system', 'system-ui', 'sans-serif'],
       },
     },
   },

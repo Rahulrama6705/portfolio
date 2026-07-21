@@ -89,11 +89,11 @@ export default function ChatWidget() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.96 }}
             transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed bottom-24 right-6 z-[60] flex h-[min(560px,70vh)] w-[min(380px,90vw)] flex-col overflow-hidden rounded-2xl border border-ink/10 bg-paper shadow-[0_20px_60px_rgba(28,74,70,0.25)]"
+            className="fixed bottom-24 right-6 z-[60] flex h-[min(560px,70vh)] w-[min(380px,90vw)] flex-col overflow-hidden rounded-2xl border border-ink/10 bg-paper font-sans shadow-[0_20px_60px_rgba(28,74,70,0.25)]"
           >
             <div className="flex items-center justify-between border-b border-ink/10 bg-paperDeep px-5 py-4">
               <div>
-                <p className="font-serif text-lg font-bold text-ink">Ask about Rahul</p>
+                <p className="font-sans text-lg font-bold text-ink">Ask about Rahul</p>
                 <p className="text-xs text-ink/50">Instant answers, no waiting</p>
               </div>
               <span
