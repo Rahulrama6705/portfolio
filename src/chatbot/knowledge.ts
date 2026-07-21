@@ -21,7 +21,7 @@ export const knowledge: KnowledgeEntry[] = [
   projectByKeywords(['eeg', 'schizophrenia', 'signal', 'gnn', 'cnn', 'vgg'], 'Deep Learning based EEG Signal Analysis for Schizophrenia Detection'),
 
   {
-    keywords: ['project', 'projects', 'built', 'build', 'portfolio', 'work on', 'made'],
+    keywords: ['projects', 'built', 'build', 'portfolio', 'work on', 'working on', 'made'],
     answer:
       `Rahul has built ${projects.length} main projects:\n\n` +
       projects.map((p) => `• **${p.title}** (${p.dates}) — ${p.description}`).join('\n\n') +
@@ -40,7 +40,7 @@ export const knowledge: KnowledgeEntry[] = [
         .join('\n\n'),
   },
   {
-    keywords: ['skill', 'skills', 'tech stack', 'technologies', 'languages', 'frameworks', 'tools', 'know', 'proficient', 'stack'],
+    keywords: ['skills', 'tech stack', 'technologies', 'languages', 'frameworks', 'tools', 'know', 'proficient', 'stack'],
     answer:
       `Rahul's technical skills:\n\n` +
       skills.map((g) => `• **${g.name}**: ${g.items.join(', ')}`).join('\n'),
@@ -54,16 +54,33 @@ export const knowledge: KnowledgeEntry[] = [
     answer: `You can reach Rahul at:\n\n• Email: ${profile.email}\n• Phone: ${profile.phone}\n• LinkedIn: ${profile.linkedin}\n• GitHub: ${profile.github}\n\nHe usually replies within a day.`,
   },
   {
-    keywords: ['available', 'hiring', 'open to work', 'freelance', 'opportunity', 'looking for'],
+    keywords: ['available', 'hiring', 'open to work', 'freelance', 'opportunity', 'looking for', 'internships'],
     answer: `Yes — Rahul is currently open to internships, research collaborations, and AI/ML engineering roles. Feel free to reach out at ${profile.email}.`,
   },
   {
-    keywords: ['who are you', 'about you', 'introduce', 'tell me about rahul', 'who is rahul'],
+    keywords: [
+      'who are you',
+      'about you',
+      'introduce',
+      'tell me about rahul',
+      'who is rahul',
+      'who is he',
+      'about him',
+      'tell me about him',
+    ],
     answer: profile.bio,
   },
   {
-    keywords: ['hi', 'hello', 'hey', 'yo', 'sup'],
+    keywords: ['hi', 'hello', 'hey', 'yo', 'sup', 'good morning', 'good evening'],
     answer: `Hi — ask me about Rahul's experience, projects, skills, education, or how to get in touch.`,
+  },
+  {
+    keywords: ['thanks', 'thank you', 'cheers', 'appreciate'],
+    answer: `You're welcome! Anything else you'd like to know about Rahul?`,
+  },
+  {
+    keywords: ['bye', 'goodbye', 'see you'],
+    answer: `Take care! Feel free to reach out to Rahul directly at ${profile.email} if you'd like to talk further.`,
   },
 ]
 
