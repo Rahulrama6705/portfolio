@@ -31,7 +31,7 @@ export default function ChatWidget() {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: 'bot',
-      text: `Hey! 👋 I'm ${profile.name}'s portfolio assistant. Ask me anything about his experience, projects, skills, or how to get in touch.`,
+      text: `I can answer questions about ${profile.name}'s background — experience, projects, skills, or how to get in touch.`,
     },
   ])
   const [input, setInput] = useState('')

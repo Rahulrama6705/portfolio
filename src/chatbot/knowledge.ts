@@ -25,7 +25,7 @@ export const knowledge: KnowledgeEntry[] = [
     answer:
       `Rahul has built ${projects.length} main projects:\n\n` +
       projects.map((p) => `• **${p.title}** (${p.dates}) — ${p.description}`).join('\n\n') +
-      `\n\nAsk me about any one of them by name for more detail!`,
+      `\n\nAsk about any one of them by name for more detail.`,
   },
   {
     keywords: ['education', 'study', 'studying', 'university', 'college', 'degree', 'cgpa', 'gpa', 'woxsen', 'school'],
@@ -51,7 +51,7 @@ export const knowledge: KnowledgeEntry[] = [
   },
   {
     keywords: ['contact', 'email', 'reach', 'hire', 'phone', 'number', 'linkedin', 'github', 'connect', 'get in touch'],
-    answer: `You can reach Rahul at:\n\n• Email: ${profile.email}\n• Phone: ${profile.phone}\n• LinkedIn: ${profile.linkedin}\n• GitHub: ${profile.github}\n\nHe usually replies within a day!`,
+    answer: `You can reach Rahul at:\n\n• Email: ${profile.email}\n• Phone: ${profile.phone}\n• LinkedIn: ${profile.linkedin}\n• GitHub: ${profile.github}\n\nHe usually replies within a day.`,
   },
   {
     keywords: ['available', 'hiring', 'open to work', 'freelance', 'opportunity', 'looking for'],
@@ -63,7 +63,7 @@ export const knowledge: KnowledgeEntry[] = [
   },
   {
     keywords: ['hi', 'hello', 'hey', 'yo', 'sup'],
-    answer: `Hey! 👋 I'm Rahul's portfolio assistant. Ask me about his experience, projects, skills, education, or how to get in touch.`,
+    answer: `Hi — ask me about Rahul's experience, projects, skills, education, or how to get in touch.`,
   },
 ]
 
@@ -74,4 +74,4 @@ export const suggestedQuestions = [
   'How can I contact him?',
 ]
 
-export const fallbackAnswer = `I don't have a specific answer for that, but you can reach Rahul directly at ${profile.email} — he usually replies within a day! Try asking about his projects, skills, experience, or education.`
+export const fallbackAnswer = `I don't have a specific answer for that, but you can reach Rahul directly at ${profile.email} — he usually replies within a day. Try asking about his projects, skills, experience, or education.`

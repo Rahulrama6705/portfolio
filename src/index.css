@@ -20,7 +20,7 @@ body {
   margin: 0;
   background: #f4f1f8;
   color: #2b2620;
-  @apply font-serif antialiased;
+  @apply font-sans antialiased;
 }
 
 ::selection {
@@ -44,11 +44,4 @@ body {
 
 .section-container {
   @apply mx-auto w-full max-w-5xl px-6 sm:px-8;
-}
-
-.dock-word {
-  display: inline-block;
-  white-space: pre;
-  transform-origin: center bottom;
-  transition: transform 0.15s ease-out;
 }

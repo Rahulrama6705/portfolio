@@ -1,39 +1,29 @@
-import { motion } from 'framer-motion'
 import { experience } from '../data'
 import SectionHeading from './SectionHeading'
 import Reveal from './Reveal'
-import DockText from './DockText'
 
 export default function Experience() {
   return (
-    <section id="experience" className="relative z-[1] mx-auto max-w-[900px] px-[6vw] py-[100px]">
-      <SectionHeading index="02 — EXPERIENCE" title="Experience" />
+    <section id="experience" className="relative z-[1] mx-auto max-w-[820px] px-[6vw] py-24">
+      <SectionHeading index="02 · Experience" title="Experience" />
 
-      <div className="relative pl-8">
-        <div className="absolute bottom-1.5 left-[5px] top-1.5 w-0.5 bg-gradient-to-b from-accent via-accent-light to-accent-soft/30" />
-
+      <div className="flex flex-col">
         {experience.map((job, i) => (
-          <Reveal key={job.role} direction={i % 2 === 0 ? 'left' : 'right'} distance={80}>
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.25 }}
-              className="relative mb-11"
-            >
-              <div
-                className="absolute -left-8 top-1.5 h-3 w-3 rounded-full border-2 border-accent-light bg-paperDeep"
-                style={{ animation: 'dotPulse 2.4s ease-in-out infinite' }}
-              />
-              <p className="mb-1.5 font-serif text-lg font-bold tracking-[0.04em] text-accent">{job.dates}</p>
-              <h3 className="mb-0.5 font-serif text-2xl font-bold text-ink">{job.role}</h3>
-              <p className="mb-3 text-lg font-medium text-ink/70">{job.org}</p>
-              <ul className="m-0 flex flex-col gap-1.5 pl-[18px]">
+          <Reveal key={job.role} distance={16}>
+            <div className={`border-t border-ink/10 py-8 ${i === experience.length - 1 ? 'border-b' : ''}`}>
+              <div className="mb-2 flex flex-wrap items-baseline justify-between gap-2">
+                <h3 className="font-serif text-xl font-semibold text-ink">{job.role}</h3>
+                <span className="font-sans text-[13px] font-medium text-ink/45">{job.dates}</span>
+              </div>
+              <p className="mb-3 font-sans text-[14.5px] font-medium text-accent">{job.org}</p>
+              <ul className="flex flex-col gap-1.5">
                 {job.bullets.map((b) => (
-                  <li key={b} className="text-xl font-medium leading-[1.9] text-ink/80">
-                    <DockText text={b} />
+                  <li key={b} className="font-sans text-[15px] leading-[1.7] text-ink/70">
+                    {b}
                   </li>
                 ))}
               </ul>
-            </motion.div>
+            </div>
           </Reveal>
         ))}
       </div>
