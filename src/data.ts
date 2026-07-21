@@ -52,7 +52,6 @@ export const projects = [
     dates: 'Apr–May 2026',
     stack: ['Python', 'Streamlit', 'Ollama', 'Phi-3 Mini'],
     github: 'https://github.com/Rahulrama6705/Audit-compliance-system',
-    image: '/projects/audit-compliance.png',
     description:
       'Lightweight offline Audit & Compliance Assistant for ISO 27001/9001; generates severity analysis and remediation recommendations, with a modular architecture extending to Healthcare, Defence, Manufacturing, and IT.',
   },
@@ -61,7 +60,6 @@ export const projects = [
     dates: 'Apr–May 2026',
     stack: ['Python', 'Ollama', 'FastAPI'],
     github: 'https://github.com/Rahulrama6705/resume-screening-parser',
-    image: '/projects/resume-parser.png',
     description:
       'Fully offline resume screening assistant that extracts structured candidate details, with a filterable real-time candidate management UI.',
   },
@@ -76,7 +74,6 @@ export const projects = [
     title: 'Deep Learning based EEG Signal Analysis for Schizophrenia Detection',
     dates: 'Jun 2024 – Mar 2025',
     stack: ['Python', 'Deep Learning', 'CNN', 'VGG', 'GNN'],
-    image: '/projects/eeg-schizophrenia.png',
     description:
       'Team project predicting schizophrenia from EEG signals over 10,000+ preprocessed windows; explored GNNs and contrastive learning for an 18% metric improvement, with ablation studies underway for a journal manuscript.',
   },

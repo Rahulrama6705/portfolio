@@ -67,7 +67,7 @@ export default function ChatWidget() {
         whileHover={{ scale: 1.08 }}
         whileTap={{ scale: 0.95 }}
         aria-label={open ? 'Close chat' : 'Open chat'}
-        className="fixed bottom-6 right-6 z-[60] flex h-14 w-14 items-center justify-center rounded-full bg-accent text-white shadow-[0_10px_30px_rgba(124,92,255,0.35)]"
+        className="fixed bottom-6 right-6 z-[60] flex h-14 w-14 items-center justify-center rounded-full bg-accent text-white shadow-[0_10px_30px_rgba(28,74,70,0.35)]"
       >
         <AnimatePresence mode="wait" initial={false}>
           <motion.span
@@ -89,7 +89,7 @@ export default function ChatWidget() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.96 }}
             transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed bottom-24 right-6 z-[60] flex h-[min(560px,70vh)] w-[min(380px,90vw)] flex-col overflow-hidden rounded-2xl border border-ink/10 bg-paper font-sans shadow-[0_20px_60px_rgba(124,92,255,0.25)]"
+            className="fixed bottom-24 right-6 z-[60] flex h-[min(560px,70vh)] w-[min(380px,90vw)] flex-col overflow-hidden rounded-2xl border border-ink/10 bg-paper font-sans shadow-[0_20px_60px_rgba(28,74,70,0.25)]"
           >
             <div className="flex items-center justify-between border-b border-ink/10 bg-paperDeep px-5 py-4">
               <div>
@@ -109,7 +109,7 @@ export default function ChatWidget() {
                     className={`max-w-[85%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${
                       m.role === 'user'
                         ? 'rounded-br-sm bg-accent text-white'
-                        : 'rounded-bl-sm border border-ink/10 bg-white/[0.06] text-ink/90'
+                        : 'rounded-bl-sm border border-ink/10 bg-white text-ink/90'
                     }`}
                   >
                     {renderFormatted(m.text)}
@@ -118,7 +118,7 @@ export default function ChatWidget() {
               ))}
               {thinking && (
                 <div className="flex justify-start">
-                  <div className="flex gap-1 rounded-2xl rounded-bl-sm border border-ink/10 bg-white/[0.06] px-4 py-3">
+                  <div className="flex gap-1 rounded-2xl rounded-bl-sm border border-ink/10 bg-white px-4 py-3">
                     {[0, 1, 2].map((i) => (
                       <span
                         key={i}
@@ -136,7 +136,7 @@ export default function ChatWidget() {
                     <button
                       key={q}
                       onClick={() => ask(q)}
-                      className="rounded-full border border-accent/30 bg-accent/10 px-3 py-1.5 text-xs font-medium text-accent-light transition-colors hover:bg-accent/20"
+                      className="rounded-full border border-accent/30 bg-accent/10 px-3 py-1.5 text-xs font-medium text-accent transition-colors hover:bg-accent/20"
                     >
                       {q}
                     </button>
@@ -150,7 +150,7 @@ export default function ChatWidget() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="Ask a question..."
-                className="flex-1 rounded-full border border-ink/15 bg-white/[0.05] px-4 py-2.5 text-sm text-ink outline-none placeholder:text-ink/40 focus:border-accent-light"
+                className="flex-1 rounded-full border border-ink/15 bg-white px-4 py-2.5 text-sm text-ink outline-none placeholder:text-ink/40 focus:border-accent-light"
               />
               <button
                 type="submit"

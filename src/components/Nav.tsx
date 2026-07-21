@@ -26,25 +26,22 @@ export default function Nav() {
 
   return (
     <nav
-      className="sticky top-0 z-50 flex items-center justify-between px-[6vw] py-4 backdrop-blur-md transition-all duration-300 ease-out"
+      className="sticky top-0 z-50 flex items-center justify-between px-[6vw] py-5 backdrop-blur-md transition-all duration-300 ease-out"
       style={{
         transform: hidden ? 'translateY(-100%)' : 'translateY(0)',
-        backgroundColor: scrolled ? 'rgba(11,13,18,0.85)' : 'rgba(11,13,18,0)',
-        borderBottom: scrolled ? '1px solid rgba(243,244,246,0.08)' : '1px solid transparent',
+        backgroundColor: scrolled ? 'rgba(244,241,248,0.85)' : 'rgba(244,241,248,0)',
+        borderBottom: scrolled ? '1px solid rgba(36,31,25,0.08)' : '1px solid transparent',
       }}
     >
-      <a href="#hero" className="flex items-center gap-2.5 no-underline">
-        <span className="flex h-8 w-8 items-center justify-center rounded-md bg-accent font-serif text-[15px] font-bold text-white">
-          R
-        </span>
-        <span className="font-serif text-[20px] font-semibold text-ink">Rahul Rama</span>
+      <a href="#hero" className="font-serif text-[23px] font-bold text-ink no-underline">
+        Rahul Rama
       </a>
-      <div className="flex gap-8 font-sans text-[16px] font-medium text-ink/50">
+      <div className="flex gap-8 font-sans text-[18px] font-medium text-ink/60">
         {links.map((l) => (
           <a
             key={l}
             href={`#${l.toLowerCase()}`}
-            className="no-underline transition-colors duration-200 hover:text-accent-light"
+            className="no-underline transition-colors duration-200 hover:text-accent"
           >
             {l}
           </a>
