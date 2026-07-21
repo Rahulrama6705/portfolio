@@ -9,29 +9,29 @@ export default function About() {
 
       <div className="grid gap-16 lg:grid-cols-[1.3fr_1fr]">
         <Reveal direction="left">
-          <p className="font-sans text-[18px] leading-[1.85] text-ink/75">{profile.bio}</p>
+          <p className="font-sans text-[22px] leading-[1.85] text-ink/75">{profile.bio}</p>
         </Reveal>
 
         <Reveal direction="right">
           <div className="flex flex-col gap-10">
             <div>
-              <p className="mb-3 font-sans text-[13px] font-semibold uppercase tracking-[0.14em] text-ink/45">
+              <p className="mb-3 font-sans text-[17px] font-semibold uppercase tracking-[0.14em] text-ink/45">
                 Education
               </p>
-              <p className="mb-1 font-serif text-lg font-semibold text-ink">{education.school}</p>
-              <p className="mb-1 font-sans text-[15px] text-ink/65">{education.degree}</p>
-              <p className="font-sans text-[13px] text-ink/45">
+              <p className="mb-1 font-serif text-xl font-semibold text-ink">{education.school}</p>
+              <p className="mb-1 font-sans text-[19px] text-ink/65">{education.degree}</p>
+              <p className="font-sans text-[17px] text-ink/45">
                 {education.dates} · CGPA {education.cgpa}
               </p>
             </div>
 
             <div>
-              <p className="mb-3 font-sans text-[13px] font-semibold uppercase tracking-[0.14em] text-ink/45">
+              <p className="mb-3 font-sans text-[17px] font-semibold uppercase tracking-[0.14em] text-ink/45">
                 Certifications
               </p>
               <ul className="flex flex-col gap-2">
                 {certifications.map((c) => (
-                  <li key={c} className="font-sans text-[14.5px] leading-snug text-ink/70">
+                  <li key={c} className="font-sans text-[18.5px] leading-snug text-ink/70">
                     {c}
                   </li>
                 ))}

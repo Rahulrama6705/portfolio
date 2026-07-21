@@ -33,10 +33,10 @@ export default function Nav() {
         borderBottom: scrolled ? '1px solid rgba(36,31,25,0.08)' : '1px solid transparent',
       }}
     >
-      <a href="#hero" className="font-serif text-[19px] font-bold text-ink no-underline">
+      <a href="#hero" className="font-serif text-[23px] font-bold text-ink no-underline">
         Rahul Rama
       </a>
-      <div className="flex gap-8 font-sans text-[14px] font-medium text-ink/60">
+      <div className="flex gap-8 font-sans text-[18px] font-medium text-ink/60">
         {links.map((l) => (
           <a
             key={l}
