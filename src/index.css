@@ -16,23 +16,39 @@
   scroll-behavior: smooth;
 }
 
+html {
+  background: #faf7f1;
+}
+
 body {
   margin: 0;
-  background: #f4f1f8;
-  color: #2b2620;
+  background: #faf7f1;
+  color: #26211b;
   @apply font-sans antialiased;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
 }
 
 ::selection {
-  background: #b8a5d8;
-  color: #1a1510;
+  background: #d68a5c;
+  color: #26211b;
 }
 
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #efeaf5;
+  background: #f1ece1;
 }
 ::-webkit-scrollbar-thumb {
   background: rgba(28, 74, 70, 0.35);

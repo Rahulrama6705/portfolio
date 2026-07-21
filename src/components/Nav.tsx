@@ -26,17 +26,20 @@ export default function Nav() {
 
   return (
     <nav
-      className="sticky top-0 z-50 flex items-center justify-between px-[6vw] py-5 backdrop-blur-md transition-all duration-300 ease-out"
+      className="sticky top-0 z-50 flex items-center justify-between px-[6vw] py-4 backdrop-blur-md transition-all duration-300 ease-out"
       style={{
         transform: hidden ? 'translateY(-100%)' : 'translateY(0)',
-        backgroundColor: scrolled ? 'rgba(244,241,248,0.85)' : 'rgba(244,241,248,0)',
-        borderBottom: scrolled ? '1px solid rgba(36,31,25,0.08)' : '1px solid transparent',
+        backgroundColor: scrolled ? 'rgba(250,247,241,0.85)' : 'rgba(250,247,241,0)',
+        borderBottom: scrolled ? '1px solid rgba(38,33,27,0.08)' : '1px solid transparent',
       }}
     >
-      <a href="#hero" className="font-serif text-[23px] font-bold text-ink no-underline">
-        Rahul Rama
+      <a href="#hero" className="flex items-center gap-2.5 no-underline">
+        <span className="flex h-8 w-8 items-center justify-center rounded-md bg-accent font-serif text-[15px] font-semibold italic text-paper">
+          R
+        </span>
+        <span className="font-serif text-[20px] font-semibold text-ink">Rahul Rama</span>
       </a>
-      <div className="flex gap-8 font-sans text-[18px] font-medium text-ink/60">
+      <div className="flex gap-8 font-sans text-[17px] font-medium text-ink/60">
         {links.map((l) => (
           <a
             key={l}

@@ -17,19 +17,19 @@ const SKILL_ICONS: Record<string, string> = {
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative z-[1] mx-auto max-w-[900px] px-[6vw] py-24">
+    <section id="skills" className="relative z-[1] mx-auto max-w-[900px] px-[6vw] py-20">
       <SectionHeading index="04 · Skills" title="Skills" />
 
-      <div className="flex flex-col gap-7">
+      <div className="flex flex-col gap-4">
         {skills.map((g) => (
           <Reveal key={g.name} distance={12}>
-            <div className="grid gap-3 sm:grid-cols-[210px_1fr]">
-              <p className="font-sans text-[17px] font-semibold uppercase tracking-[0.12em] text-ink/45">{g.name}</p>
+            <div className="grid gap-3 rounded-xl border border-ink/10 bg-white/40 p-6 shadow-[0_1px_2px_rgba(36,31,25,0.04)] sm:grid-cols-[190px_1fr]">
+              <p className="font-sans text-[16px] font-semibold uppercase tracking-[0.12em] text-ink/45">{g.name}</p>
               <div className="flex flex-wrap gap-x-4 gap-y-2">
                 {g.items.map((item) => (
                   <span
                     key={item}
-                    className="inline-flex items-center gap-1.5 font-sans text-[19px] text-ink/80"
+                    className="inline-flex items-center gap-1.5 font-sans text-[18px] text-ink/80"
                   >
                     {SKILL_ICONS[item] && (
                       <img
